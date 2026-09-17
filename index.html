@@ -68,12 +68,13 @@
             border: 2px solid #38bdf8; /* Mavi çerçeve */
             margin-bottom: 12px;
             box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+            background-color: #111;
         }
 
         .profil-cerceve img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Fotoğrafın oranını bozmadan doldurur */
+            object-fit: cover; /* Orantıyı bozmadan doldurur */
             object-position: center 20%; /* Yüz kısmını ortalar */
         }
 
@@ -190,9 +191,9 @@
     <!-- Ana Ekran -->
     <div class="main-container">
         
-        <!-- Yuvarlak Profil Fotoğrafı (Depodaki 'profil.jpg' dosyasını çeker) -->
+        <!-- Yuvarlak Profil Fotoğrafı (Doğrudan yüklediğin fotoğrafın bağlantısı ile) -->
         <div class="profil-cerceve">
-            <img src="profil.jpg" alt="Samet Alcan">
+            <img src="https://i.ibb.co/68v8L54/photo.jpg" alt="Samet Alcan" onerror="this.style.display='none'">
         </div>
 
         <h1>Samet Alcan</h1>
@@ -206,7 +207,7 @@
 
             <div class="card">
                 <h3>Web ve Tasarım</h3>
-                <p>HTML ve CSS kullanarak modern web arayüzleri tasarlıyor, dijital dünyada kendimi geliştiriyorum.</p>
+                <p>HTML dan ve CSS kullanarak modern web arayüzleri tasarlıyor, dijital dünyada kendimi geliştiriyorum.</p>
             </div>
 
             <div class="card">
@@ -231,3 +232,4 @@
 
 </body>
 </html>
+    
