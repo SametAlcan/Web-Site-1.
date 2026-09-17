@@ -61,20 +61,20 @@
 
         /* Yuvarlak Profil Fotoğrafı Alanı */
         .profil-cerceve {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%; /* Tam daire yapar */
-            overflow: hidden;    /* Taşan kısımları gizler */
-            border: 2px solid #38bdf8; /* Çevresine şık mavi bir çerçeve */
-            margin-bottom: 15px;
+            overflow: hidden;    /* Taşan kısımları keser */
+            border: 2px solid #38bdf8; /* Mavi çerçeve */
+            margin-bottom: 12px;
             box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
         }
 
         .profil-cerceve img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Fotoğrafın orantısını bozmadan çerçeveye oturtur */
-            object-position: center 20%; /* Fotoğrafta yüzünün olduğu kısmı merkeze alır */
+            object-fit: cover; /* Fotoğrafın oranını bozmadan doldurur */
+            object-position: center 20%; /* Yüz kısmını ortalar */
         }
 
         h1 {
@@ -190,10 +190,9 @@
     <!-- Ana Ekran -->
     <div class="main-container">
         
-        <!-- Yuvarlak Profil Fotoğrafı -->
+        <!-- Yuvarlak Profil Fotoğrafı (Depodaki 'profil.jpg' dosyasını çeker) -->
         <div class="profil-cerceve">
-            <!-- Görüntüyü internet üzerinden doğrudan çeken yapı -->
-            <img src="https://images.weserv.nl/?url=i.imgur.com/SENIN_FOTOGRAF_LINKIN.jpg" alt="Samet Alcan">
+            <img src="profil.jpg" alt="Samet Alcan">
         </div>
 
         <h1>Samet Alcan</h1>
