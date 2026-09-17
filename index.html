@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samet Alcan - Kişisel Sayfa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000; /* Tamamen siyah arka plan */
+            color: #ffffff;
+            height: 100vh;
+            overflow: hidden; /* Sayfanın aşağı kaymasını engeller */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Üst Sabit Menü */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        /* İşlevsiz Hakkımda Butonu */
+        .btn-hakkinda {
+            background-color: #121212;
+            color: #38bdf8;
+            border: 1px solid #262626;
+            padding: 10px 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: default;
+        }
+
+        /* Ana Kapsayıcı */
+        .main-container {
+            max-width: 900px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #a3a3a3;
+            margin-bottom: 30px;
+        }
+
+        /* 3'lü Kutucuk Alanı (Grid Yapısı) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Her Bir Kutucuk (Kart) */
+        .card {
+            background-color: #0a0a0a;
+            border: 1px solid #1f1f1f;
+            padding: 25px 20px;
+            border-radius: 12px;
+            text-align: left;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: #38bdf8; /* Üzerine gelince hafif mavi parlama */
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #a3a3a3;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Kısım / İşlevsiz Buton -->
+    <nav>
+        <button class="btn-hakkinda">Hakkımda</button>
+    </nav>
+
+    <!-- Ana İçerik Alanı -->
+    <div class="main-container">
+        <h1>Samet Alcan</h1>
+        <div class="subtitle">11. Sınıf Bilişim Teknolojileri Öğrencisi</div>
+        
+        <!-- 3 Adet Bilgi Kutucuğu -->
+        <div class="grid-container">
+            <div class="card">
+                <h3>💻 Eğitim & Bölüm</h3>
+                <p>Meslek lisesinde bilişim alanında eğitim alıyor; yazılım, ağ sistemleri ve programlama temellerini öğreniyorum.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Web & Tasarım</h3>
+                <p>HTML ve CSS kullanarak modern web arayüzleri tasarlıyor, dijital dünyada kendi projelerimi hayata geçiriyorum.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ İlgi Alanlarım</h3>
+                <p>Bilgisayar donanımları, sistem optimizasyonu ve yeni teknolojileri yakından takip ederek kendimi sürekli geliştiriyorum.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
